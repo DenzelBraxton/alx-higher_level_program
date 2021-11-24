@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    for order in sorted(a_dictionary):
-        print("{:s}: {}".format(order, a_dictionary[order]))
+    sorted_dic = sorted(a_dictionary)
+    for i in sorted_dic:
+        print("{:s}: {}".format(i, a_dictionary[i]))
