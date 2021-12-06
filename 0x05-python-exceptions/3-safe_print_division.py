@@ -8,5 +8,3 @@ def safe_print_division(a, b):
         print("Inside result: {}".format(result))
 
     return result
-
-safe_print_division(4, 2)
