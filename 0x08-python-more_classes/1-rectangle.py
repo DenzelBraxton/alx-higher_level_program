@@ -2,6 +2,7 @@
 """Module 0-rectangle
 The module defines an empty rectangle class"""
 
+
 class Rectangle:
     """This class defines by width and height"""
     def __init__(self, width=0, height=0):
