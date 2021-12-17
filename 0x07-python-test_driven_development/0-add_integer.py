@@ -1,14 +1,14 @@
 
 """
-    A module that adds 2 integers
-    It returns an integer
+A module that adds 2 integers
+It returns an integer
 """
 
 
 def add_integer(a, b=98):
     """
-        Returns the addition of a and b
-        or error if a and b is not an integer or float
+    Returns the addition of a and b
+    or error if a and b is not an integer or float
     """
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
@@ -16,7 +16,7 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     
     """
-        casting a and b to be an integer value
+    casting a and b to be an integer value
     """
     if type(a) is float:
         a = int(a)
