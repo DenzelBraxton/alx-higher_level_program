@@ -6,7 +6,6 @@ Returns a new matrix
 """
 
 
-
 def matrix_divided(matrix, div):
     """Returns a new matrix (list of list)
     with the result of the division of matrix by div
