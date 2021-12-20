@@ -39,13 +39,13 @@ Now test it:
     >>> my_list.print_sorted()
     [2, 3, 6]
 
-    >>> my_list = MyList("hello")
-    
+    >>> my_list = MyList("happy")
+
     >>> my_list
-    ['h', 'e', 'l', 'l', 'o']
+    ['h', 'a', 'p', 'p', 'y']
 
     >>> my_list.print_sorted()
-    ['e', 'h', 'l', 'l', 'o']
+    ['a', 'h', 'p', 'p', 'y']
 
     >>> new_l = MyList()
 
