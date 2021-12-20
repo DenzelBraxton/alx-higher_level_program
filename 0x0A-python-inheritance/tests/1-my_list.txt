@@ -1,0 +1,23 @@
+=========================================
+The ```1-my_list``` module
+=========================================
+
+Using: ```MyList```
+-----------------------------------------
+
+Import the class:
+    >>> MyList = __import__('1-my_list').MyList
+
+Now test it:
+    >>> my_list = MyList()
+
+    >>> my_list
+    []
+
+    >>> my_list.append(1)
+
+    >>> my_list.append(4)
+    
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
