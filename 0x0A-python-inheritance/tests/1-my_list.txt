@@ -43,3 +43,8 @@ Now test it:
 
     >>> my_list.print_sorted()
     ['a', 'h', 'p', 'p', 'y']
+
+    >>> new_l = MyList()
+
+    >>> new_l.print_sorted()
+    []
