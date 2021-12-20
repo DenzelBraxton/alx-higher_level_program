@@ -30,6 +30,9 @@ Now test it:
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5]
 
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
     >>> my_list = MyList([3, 6, 5])
     [3, 6, 5]
 
@@ -44,7 +47,3 @@ Now test it:
     >>> my_list.print_sorted()
     ['a', 'h', 'p', 'p', 'y']
 
-    >>> new_l = MyList()
-
-    >>> new_l.print_sorted()
-    []
