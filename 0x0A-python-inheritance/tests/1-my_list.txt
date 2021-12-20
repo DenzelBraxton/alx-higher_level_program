@@ -31,5 +31,4 @@ Now test it:
     [1, 2, 3, 4, 5]
 
     >>> my_list.append("5")
-    Traceback (most recent call last):
-    TypeError: '<' not supported between instances of 'str' and 'int'
+    [1, 4, 2, 3, '5']
