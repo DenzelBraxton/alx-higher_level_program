@@ -31,7 +31,7 @@ Now test it:
 
     >>> big.area()
     Traceback (most recent call last):
-    NameError: name 'big' is not defined
+    Exception: area() is not implemented
 
     >>> bg.integer_validator("age")
     Traceback (most recent call last):
