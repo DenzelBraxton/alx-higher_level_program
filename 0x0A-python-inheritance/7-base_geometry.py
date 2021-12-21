@@ -8,6 +8,7 @@ Public instance method: def integer_validator(self, name, value): that validates
 
 class BaseGeometry:
     """
+    Class with public instance methods.
     It raises an Exception with the message area() is not implemented
     """
     def area(self):
@@ -17,7 +18,7 @@ class BaseGeometry:
         """Validates value."""
 
         if type(value) is not int:
-            raise TypeError("<name> must be an integer")
+            raise TypeError("{} must be an integer".format(name))
         
         if value <= 0:
-            raise ValueError("<name> must be greater than 0")
+            raise ValueError("{} must be an integer".format(name))
