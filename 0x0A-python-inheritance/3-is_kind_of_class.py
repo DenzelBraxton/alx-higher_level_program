@@ -13,7 +13,6 @@ def is_kind_of_class(obj, a_class):
     Args:
         - obj: This is the object to look out for
         - a_class: This is the class that we are verifying the instace of
-        
     Returns True if the object is an instance of a_class or a class inherited from a_class.
     Otherwise return False
     """
