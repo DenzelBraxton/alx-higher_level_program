@@ -8,6 +8,14 @@ This is a class Student that defines a student by:
 
 
 class Student:
+    """Class that defines a student.
+    Public attributes:
+        - first_name
+        - last_name
+        - age
+    Public method to_json().
+    """
+
     def __init__(self, first_name, last_name, age):
         """It accept and assign value to the argument of student class
 
