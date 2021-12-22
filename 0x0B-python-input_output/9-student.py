@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """Module: 9-student
 This is a class Student that defines a student by:
 - First_name
