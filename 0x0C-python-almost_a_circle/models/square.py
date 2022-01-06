@@ -19,7 +19,7 @@ class Square(Rectangle):
     """
 
     def __init__(self, size, x=0, y=0, id=None):
-        """This function initializes a square instance
+        """Initializes a Square instance.
 
         Args:
             - __size: size
@@ -34,31 +34,30 @@ class Square(Rectangle):
     def __str__(self):
         """Returns a string representation of a Square instance."""
 
-        i = "[Square] ({}) {}/{} - {}".format(
+        s = "[Square] ({}) {}/{} - {}".format(
             self.id, self.x, self.y, self.__width)
-        return i
-    
+        return s
+
     @property
     def size(self):
-        """It retrieves the size attribute"""
+        """Retrieves the size attribute."""
 
         return self.__width
-    
+
     @size.setter
     def size(self, value):
-        """This function sets the size attribute"""
+        """Sets the size attribute."""
 
         if type(value) is not int:
             raise TypeError("width must be an integer")
-        if type(value) <= 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
-        
         self.__width = value
         self.__height = value
-    
+
     def update(self, *args, **kwargs):
-        """Update the square class and assign attributes
-        
+        """Updates attributes of an instance.
+
         Args:
             - id attribute
             - size attribute
@@ -89,10 +88,9 @@ class Square(Rectangle):
                     self.x = value
                 if key == "y":
                     self.y = value
-    
+
     def to_dictionary(self):
-        """Update the class Square and returns the dictionary representation of a Square"""
+        """Returns the dictionary representation of a Square."""
 
-        my_dict = {"id": self.id, "size": self.size, "x": self.x, "y": self.y}
-
+        my_dict = {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
         return my_dict
