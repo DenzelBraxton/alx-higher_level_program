@@ -14,6 +14,7 @@ if __name__ == "__main__":
                                                                     argv[2],
                                                                     argv[3]))
 
+    Base.metadata.create_all(eng)
     Session = sessionmaker(bind=eng)
     session = Session()
     state = session.query(State).filter_by(id=2).first()
