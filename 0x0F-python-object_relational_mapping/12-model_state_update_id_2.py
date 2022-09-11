@@ -3,7 +3,6 @@
 changes the name of the State object where id=2 to New Mexico from a database
 """
 
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
