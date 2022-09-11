@@ -18,10 +18,18 @@ if __name__ == "__main__":
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
+    # Session = sessionmaker(bind=engine)
+    # session = Session()
+
+    # louisiana = State(name="Louisiana")
+    # session.add(louisiana)
+    # session.commit()
+    # print(louisiana.id)
+    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-
-    louisiana = State(name="Louisiana")
-    session.add(louisiana)
+    new_state = State(name="Louisiana")
+    session.add(new_state)
+    print(session.query(State).filter_by(name="Louisiana").first().id)
     session.commit()
-    print(louisiana.id)
+    session.close()
